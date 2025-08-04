@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio Website</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/c1d4807e3c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Achievements</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Civil Engineers</p>
+                <h5>Hi, I'm <span> <br>Steven Kosim.</span></h5>
+                <a href="Images/my-cv.pdf" download="Steven_Kosim_CV.pdf" class="btn btn2">Download My CV</a>
+
+
+            </div>
+        </div>
+    </div>
+    <!------------------about------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <h2 class="sub-title12"></h2>
+                    <p> An enthusiastic, highly motivated, reliable, and responsible undergraduate with a strong
+                        commitment who studied Civil Engineering with a sub-major in Structural Engineering at
+                        Parahyangan Catholic University. Eager to explore challenges in structural, geotechnical, and
+                        construction management. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Language</span><br>Indonesian<br>English</li>
+                            <li><span>Software</span><br>• Microsoft Office<br>• AutoCad<br>• ETABS<br>• PLAXIS<br>• SAP
+                                2000<br>Python<br>Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Work Experience - 2024</span><br>Site Engineer Internship – PT. Tatamulia
+                                Nusantara Indah<br>•
+                                Understands the application of construction phases, from administrative (scheduling and
+                                cost management) tasks to on-site execution.<br>•
+                                Supervised fieldwork activities, managed work schedules, and summarized work
+                                reports.<br>• Application of S-Curve analysis, scheduling, and construction execution
+                                methods in field operations.</li>
+                            <li><span>Volunteer Experience - 2025</span><br>Marketing Team for UNPAR’s Civil Engineering
+                                Program<br>• Staff in The Promotional Event at The Civil Engineering Booth<br>•
+                                Promoted The Civil Engineering at BPK Penabur Singgasana High School</li>
+                            <li><span>Volunteer Experience - 2022-2025</span><br>Himpunan Program Studi Teknik Sipil
+                                (HMPSTS)<br>•
+                                Vice Head – Academic Department<br>• Staff of Construction Management – Resonansi<br>•
+                                Chief Executive of Education and Training for HMPSTS Members <br>• Chief Executive of
+                                Civil Academic Team (CAT)<br>• Staff of Construction - Bhakti Ganva</li>
+                            <li><span>Volunteer Experience - 2021-2023</span><br>Keluarga Mahasiswa Buddhis Parahyangan
+                                (KMBP)<br>• Mentor
+                                Staff of KMBP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Parahyangan Catholic University, Bandung<br>• Bachelor Civil
+                                Engineering, sub major in Structural Engineering<br>• GPA 3.9 (150
+                                Credits)<br>• Thesis:Comparative Study of LIDAR Point Cloud Data and Image-Based
+                                Modeling
+                                for Modeling Existing Bridges on Little Wilbraham Road </li>
+                            <li><span>2018-2021</span><br> Xaverius 1 Senior High School, Palembang<br>• Natural
+                                Sciences
+                                Major <br>• Average Score 89<br>• Provincial Level Participant, National Science
+                                Competition - Chemistry Field</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Achievements<br></h1>
+            <div class="services-list">
+                <div>
+                    <img src="images/a1.PNG">
+                    <h2>First Place Winner - ITB Civil Engineering Expo (ICEE) GECC, Institut Teknologi Bandung</h2>
+                    <p> Implementing Strategies for Stable and Disaster-Prepared Foundation Design.Design and analysis
+                        of foundations for high-rise buildings using manual analysis, 2D
+                        and 3D finite element methods, including cost management, construction method efficiency and
+                        effectiveness, safety factor assessment, and evaluation of global and local stability.<br> </p>
+                    <a
+                        href="https://unpar.ac.id/mahasiswa-teknik-sipil-unpar-juara-1-di-geotechnical-engineering-case-competition-icee-2025/">
+                        <i class="fa-solid fa-link"></i> More Information</a>
+                </div>
+                <div>
+                    <img src="images/a2.PNG">
+                    <h2>First Place Winner – Civil National Expo (CNE), Universitas Tarumanagara</h2>
+                    <p>Analysis of Retaining Walls for Deep Excavations.Design and analysis of
+                        retaining walls for deep excavations using manual, 2D, and 3D finite element methods, including
+                        settlement evaluation based on inclinometer data, global and local safety factor assessments,
+                        and construction method considerations.<br> </p>
+                    <a
+                        href="https://unpar.ac.id/mahasiswa-teknik-sipil-unpar-borong-juara-di-lomba-analisis-geoteknik-civil-national-expo-2025/"><i
+                            class="fa-solid fa-link"></i> More
+                        Information</a>
+                </div>
+
+                <div>
+                    <h2>Finalist – Poster Exhibition and Competition at the 2025 HAKI Seminar – Himpunan Ahli Konstruksi
+                        Indonesian</h2>
+                    <p>Design, assessment, monitoring, repair, strengthening, and retrofitting of
+                        buildings/ infrastructure as efforts to achieve sustainable construction. By creating a poster
+                        entitled Modeling the Dimensions of an Existing Bridge Using Image-Based Modeling.<br></p>
+                </div>
+                <div>
+                    <h2>Participant – Civil National Expo (CNE) – Universitas Tarumanagara</h2>
+                    <p>Conduction Foundation Analysis and Providing Solutions. Design and analysis
+                        of foundations for coastal areas using 2D limit equilibrium methods and manual methods,
+                        providing effective and efficient solutions. Includes safety factor assessment, settlement
+                        analysis, and evaluation of global and local stability.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/4.png">
+                    <div class="layer">
+                        <h3>ETABS Design</h3>
+                        <p>Building design with ETABS</p>
+                        <a href="images/4.png"><i class="fa-solid fa-image"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/6.png">
+                    <div class="layer">
+                        <h3>PLAXIS Design</h3>
+                        <p>Retaining Wall design with PLAXIS</p>
+                        <a href="images/6.png"><i class="fa-solid fa-image"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/5.png">
+                    <div class="layer">
+                        <h3>SAP2000 Design</h3>
+                        <p>Roof design with SAP2000</p>
+                        <a href="images/5.png"><i class="fa-solid fa-image"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/poster.jpg">
+                    <div class="layer">
+                        <h3>Poster Exhibition and Competition at the 2025 HAKI Seminar</h3>
+                        <p>Modeling the Dimensions of an Existing Bridge Using Image-Based Modeling.</p>
+                        <a href="images/poster.jpg"><i class="fa-solid fa-image"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/7.png">
+                    <div class="layer">
+                        <h3>Vice Head - Academic Department</h3>
+                        <p>Responsible for organizing events such as Parahyangan Creation (a high school infrastructure
+                            design competition), and for civil engineering student academic programs such as Civil
+                            Academic Team, Find Your Passion, and Tentoring.</p>
+                        <a href="https://www.instagram.com/p/DCVx7G1StzF/?img_index=8"><i
+                                class="fa-solid fa-image"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/2.png">
+                    <div class="layer">
+                        <h3>Marketing Team for UNPAR's Civil Engineering Program </h3>
+                        <p>Committee members for promoting UNPAR’s Civil Engineering major to high school students and
+                            share insights and experiences about studying
+                            civil engineering</p>
+                        <a href="https://www.instagram.com/p/DMdN6PVSuMv/?img_index=12">
+                            <i class="fa-solid fa-image"></i>
+                        </a>
+                        <a href="https://www.instagram.com/p/DMwS-Jwse3S/">
+                            <i class="fa-solid fa-film"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/1.png">
+                    <div class="layer">
+                        <h3>Chief Executive - Civil Academic Team & Education and Training for HMPSTS Members
+                        </h3>
+                        <p>Organized the orientation event transitioning students to university life in the Civil
+                            Engineering at UNPAR. Responsible for developing programs focused on
+                            self-development, leadership, teamwork, and critical thinking within the organization.</p>
+                        <a href="images/1.png"><i class="fa-solid fa-image"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/8.png">
+                    <div class="layer">
+                        <h3>Staff of Construction Management </h3>
+                        <p>Design and analysis construction for washroom in rural areas and create and design schedules,
+                            budget plans with S-Curve Analysis for drainage channels in rural areas.</p>
+                        <a href="images/8.png"><i class="fa-solid fa-image"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!------------------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div id="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">My Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i>stevenkosim02@gmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i></i>+62-812-7495-738</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/steven-kosim" target="_blank"><i
+                                class="fa-brands fa-square-linkedin"></i></a>
+                        <a href="https://www.instagram.com/stevkosim/" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <h1 class="sub-title"><br>Contact Me</h1>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i> Steven Kosim - Last Edited 2025</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxNygPpKFNCHz6yWMSb80Wnys6Rjp6csKYADwrlHgba9nlWztWQU4GD5ICe8Urmuoks/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully, thank you for contact me"
+                    setTimeout(function () {
+                        msg.innerHTML = " "
+
+                    }, 10000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+
+
+
+</html>
