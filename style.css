@@ -591,17 +591,4 @@ nav .fa-solid {
 
 }
 
-.btn.btn2 {
-  display: inline-block;      /* agar sejajar, bukan block penuh */
-  margin: 4px 4px 0 0;        /* kecilkan jarak antar tombol */
-  padding: 10px 16px;         /* sesuaikan ukuran tombol */
-}
 
-/* Jika kamu ingin tombol lebih rapat lagi di HP */
-@media (max-width: 576px) {
-  .btn.btn2 {
-    margin: 3px 3px;          /* jarak antar tombol lebih kecil */
-    display: inline-flex;      /* tetap sejajar di satu baris */
-    align-items: center;
-  }
-}
