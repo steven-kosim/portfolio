@@ -752,14 +752,6 @@ nav {
     }
 }
 
-@media (max-width: 1000px) {
-    #about .sub-title {
-        position: relative;
-        top: -550px;
-        /* geser ke atas sesuai tinggi foto */
-
-    }
-}
 
 @media (max-width: 1000px) {
 
@@ -772,3 +764,31 @@ nav {
     }
 }
 
+@media (max-width: 1000px) {
+    .header-text {
+        position: absolute;
+        bottom: 20px;
+        /* jarak dari bawah layar */
+        left: 58%;
+        transform: translateX(-50%);
+
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .header-text h5 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .header-text span {
+        display: inline-block;
+        margin-top: 4px;
+    }
+
+    .btn.btn2 {
+        display: inline-block;
+        margin: 8px 10px;
+        /* jarak antar tombol */
+    }
+}
