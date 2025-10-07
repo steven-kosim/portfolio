@@ -14,6 +14,59 @@ body {
     color: #fff;
 }
 
+/* Efek text shadow biru pada semua menu */
+#sidemenu li a {
+    color: white;
+    text-shadow: 0 0 4px #0099ff, 0 0 8px #0099ff;
+    /* biru lembut menyala */
+    transition: all 0.3s ease;
+}
+
+.btn.btn2 {
+    display: inline-block;
+    margin-right: 20px;
+    /* jarak horizontal antar tombol */
+}
+
+
+/* Efek saat hover (birunya makin menyala) */
+#sidemenu li a:hover {
+    color: #b3e5ff;
+    text-shadow: 0 0 6px #33ccff, 0 0 12px #33ccff;
+}
+
+.sub-title {
+    color: #fff;
+    text-shadow:
+        0 0 5px #00aaff,
+        0 0 10px #00aaff,
+        0 0 20px #00aaff,
+        0 0 40px #0088ff;
+}
+
+#sidemenu li a {
+    font-weight: bold;
+    /* bikin tulisan tebal */
+    color: #fff;
+    text-shadow:
+        0 0 5px #00aaff,
+        0 0 10px #00aaff,
+        0 0 20px #00aaff,
+        0 0 40px #0088ff;
+    transition: transform 0.2s ease, text-shadow 0.3s ease;
+}
+
+/* efek pas di-hover biar lebih keren */
+#sidemenu li a:hover {
+    transform: scale(1.1);
+    text-shadow:
+        0 0 10px #00ccff,
+        0 0 20px #00ccff,
+        0 0 40px #00ccff,
+        0 0 80px #00ccff;
+}
+
+
 #header {
     width: 100%;
     height: 100vh;
@@ -23,21 +76,31 @@ body {
     font-size: 10px;
 }
 
+nav {
+    display: flex;
+    /* buat isi nav sejajar */
+    align-items: center;
+    /* ratakan vertikal tengah */
+    justify-content: space-between;
+    /* logo kiri, menu kanan */
+    padding: 0px 0px;
+    /* ubah angka ini untuk atur jarak kiri-kanan */
+}
+
+/* ubah ukuran logo kalau terlalu besar */
+.logo {
+    width: 290px;
+    /* ubah sesuai kebutuhan */
+    height: auto;
+    margin-right: 0px;
+    /* jarak kecil antara logo dan menu */
+}
+
+
 .container {
     padding: 40px 10%;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 400px;
-
-}
 
 
 nav ul li {
@@ -600,7 +663,7 @@ nav .fa-solid {
         /* biar sejajar dalam satu baris */
         align-items: center;
         justify-content: center;
-        padding: 6px 10px;
+        padding: 6px 12px;
         /* tombol lebih kecil */
         font-size: 0.85rem;
         /* teks kecil */
@@ -611,3 +674,100 @@ nav .fa-solid {
     }
 }
 
+
+/* --- Default tampilan desktop (biarkan seperti biasa) --- */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ====== TAMPILAN HP ====== */
+@media (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .logo {
+        width: 250px;
+        margin-bottom: 0;
+    }
+
+    /* menu di tengah, bisa 2 baris */
+    #sidemenu {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px 10px;
+        position: static !important;
+        background: transparent !important;
+        transform: none !important;
+        height: auto !important;
+        padding: 8px 0;
+        margin: 0 auto;
+        width: 100%;
+        white-space: normal;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    #sidemenu li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #sidemenu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        display: inline-block;
+        padding: 4px 10px;
+
+        /* ✨ Efek bayangan biru di teks */
+        text-shadow: 0 0 4px #00bfff, 0 0 8px #00bfff;
+        transition: text-shadow 0.3s ease, color 0.3s ease;
+    }
+
+    /* Efek saat hover (birunya makin menyala) */
+    #sidemenu li a:hover {
+        color: #b3e5ff;
+        text-shadow: 0 0 6px #33ccff, 0 0 12px #33ccff;
+    }
+
+    /* sembunyikan ikon hamburger di HP */
+    nav .fa-bars,
+    nav .fa-square-xmark {
+        display: none !important;
+    }
+
+    /* kurangi jarak antara menu dan teks di bawahnya */
+    .header-text {
+        margin-top: 190px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #about .sub-title {
+        position: relative;
+        top: -550px;
+        /* geser ke atas sesuai tinggi foto */
+
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Pusatkan semua judul utama di tampilan HP */
+    .sub-title {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+}
