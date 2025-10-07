@@ -655,7 +655,7 @@ nav .fa-solid {
 }
 
 /* Untuk HP: ubah ukuran & posisi hanya dua tombol */
-@media (max-width: 576px) {
+@media (max-width: 1000px) {
 
     /* khusus dua tombol */
     .header-text a.btn.btn2 {
@@ -683,7 +683,7 @@ nav {
 }
 
 /* ====== TAMPILAN HP ====== */
-@media (max-width: 576px) {
+@media (max-width: 1000px) {
     nav {
         flex-direction: column;
         align-items: center;
@@ -752,7 +752,7 @@ nav {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1000px) {
     #about .sub-title {
         position: relative;
         top: -550px;
@@ -761,7 +761,7 @@ nav {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1000px) {
 
     /* Pusatkan semua judul utama di tampilan HP */
     .sub-title {
@@ -771,3 +771,4 @@ nav {
         margin: 0 auto 15px auto;
     }
 }
+
