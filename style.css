@@ -591,4 +591,23 @@ nav .fa-solid {
 
 }
 
+/* Untuk HP: ubah ukuran & posisi hanya dua tombol */
+@media (max-width: 576px) {
+
+    /* khusus dua tombol */
+    .header-text a.btn.btn2 {
+        display: inline-flex;
+        /* biar sejajar dalam satu baris */
+        align-items: center;
+        justify-content: center;
+        padding: 6px 10px;
+        /* tombol lebih kecil */
+        font-size: 0.85rem;
+        /* teks kecil */
+        margin: 3px;
+        /* jarak antar tombol kecil */
+        white-space: nowrap;
+        /* teks tidak turun baris */
+    }
+}
 
